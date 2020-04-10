@@ -1,6 +1,5 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:share/share.dart';
 
 void main() => runApp(MyApp());
 
@@ -52,7 +51,6 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 setState(() {
                   diceNumber = Random().nextInt(6) + 1;
-                  // Share.share(text)
                 });
               },
               child: Text('Roll Dice'))
